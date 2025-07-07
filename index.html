@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理然全球法律事務所 | HLA Global, Attorney-at-Law</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1E40AF;
+            --secondary: #10B981;
+            --dark: #1F2937;
+            --light: #F3F4F6;
+            --gray: #9CA3AF;
+            --light-gray: #E5E7EB;
+            --white: #FFFFFF;
+            --accent: #7C3AED;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            color: var(--dark);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 6rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+        }
+        
+        .logo-icon {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9), rgba(16, 185, 129, 0.8)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            position: relative;
+            color: var(--white);
+        }
+        
+        .hero-content {
+            max-width: 700px;
+        }
+        
+        .hero h1 {
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80') center/cover no-repeat;
+        }
+        
+        .director-profile {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            color: var(--white);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--light);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-top: 3px solid var(--primary);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .team-member {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member-image {
+            height: 320px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-member:hover .member-image img {
+            transform: scale(1.05);
+        }
+        
+        .member-info {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .member-title {
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Cases Section */
+        .cases {
+            background-color: var(--white);
+        }
+        
+        .cases-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .tab-btn {
+            padding: 0.8rem 1.5rem;
+            background: transparent;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--gray);
+            font-weight: 500;
+        }
+        
+        .tab-btn.active, .tab-btn:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .case-card {
+            background-color: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .case-type {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.3rem 0.8rem;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        /* Articles Section */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .article-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-image {
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .article-card:hover .article-image img {
+            transform: scale(1.05);
+        }
+        
+        .article-content {
+            padding: 2rem;
+        }
+        
+        .article-date {
+            color: var(--primary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--light);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-form {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            background-color: var(--light);
+            font-family: 'Noto Sans TC', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-detail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 0.3rem;
+        }
+        
+        .contact-map {
+            height: 300px;
+            background-color: var(--light-gray);
+            margin-top: 2rem;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light-gray);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            font-weight: 700;
+        }
+        
+        .footer-links h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-links h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .team-grid, .cases-grid, .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-scale-balanced logo-icon"></i>
+                <span>理然全球法律事務所</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#services">專業服務</a></li>
+                    <li><a href="#team">律師團隊</a></li>
+                    <li><a href="#cases">成功案例</a></li>
+                    <li><a href="#articles">最新文章</a></li>
+                    <li><a href="#contact">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>科技驅動的法律創新</h1>
+                <p class="hero-subtitle">HLA Global – 結合法律專業與數位科技，為您提供前瞻性的法律解決方案</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn">認識我們</a>
+                    <a href="#contact" class="btn btn-outline">線上諮詢</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>關於我們</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>理然全球法律事務所是新一代的法律服務提供者，我們將傳統法律專業與現代科技完美結合，運用AI法律分析、區塊鏈存證等技術，為客戶提供更高效、精準的法律服務。我們的團隊由資深律師與科技專家組成，致力於創新法律服務模式。</p>
+                    <div class="director-profile">
+                        <h3>李欣庭 所長</h3>
+                        <p>台北大學法律系、司法官考試第34名、律師高考第23名</p>
+                        <p>經歷：嘉義地檢署檢察官、台灣高等法院檢察署檢察官、法律科技創新協會理事</p>
+                    </div>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>專業服務</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-handshake service-icon"></i>
+                    <h3>民事糾紛處理</h3>
+                    <p>運用數位證據收集系統，高效處理婚姻家庭、契約糾紛、損害賠償等各類民事案件。</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-gavel service-icon"></i>
+                    <h3>刑事辯護</h3>
+                    <p>結合AI案件分析技術，提供精準的被告辯護、告訴代理等刑事法律服務。</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-home service-icon"></i>
+                    <h3>不動產法務</h3>
+                    <p>利用區塊鏈技術確保交易安全，處理買賣契約審閱、產權糾紛等不動產法律事務。</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-contract service-icon"></i>
+                    <h3>遺產繼承與財產規劃</h3>
+                    <p>提供數位遺囑存證服務，確保遺囑撰擬、遺產分割等財產傳承法律安全。</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-briefcase service-icon"></i>
+                    <h3>商業法律顧問</h3>
+                    <p>運用智能合約技術，為企業提供公司設立、合約審閱等全方位法律服務。</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe service-icon"></i>
+                    <h3>國際法律諮詢</h3>
+                    <p>透過全球律師網絡，處理跨境繼承、國際貿易糾紛等國際法律事務。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>專業團隊</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="廖婉茹律師">
+                    </div>
+                    <div class="member-info">
+                        <h3>廖婉茹 律師</h3>
+                        <p class="member-title">合署律師</p>
+                        <p>中國文化大學法律系、律師高考及格、書記官考試及格</p>
+                        <p>專長：民事訴訟、家事案件、數位證據收集</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="丁巧欣律師">
+                    </div>
+                    <div class="member-info">
+                        <h3>丁巧欣 律師</h3>
+                        <p class="member-title">合署律師</p>
+                        <p>中原大學財經法律系、律師高考及格</p>
+                        <p>專長：商業法律、智能合約、企業法律顧問</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1590086783191-a0694c7d1e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="林原弘律師">
+                    </div>
+                    <div class="member-info">
+                        <h3>林原弘 律師</h3>
+                        <p class="member-title">科技法律專家</p>
+                        <p>台灣大學法律系、資訊工程學程</p>
+                        <p>專長：科技法律、區塊鏈應用、AI法律分析</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="許明利法務主任">
+                    </div>
+                    <div class="member-info">
+                        <h3>許明利 法務主任</h3>
+                        <p class="member-title">數位法務主任</p>
+                        <p>政治大學法律系、資管碩士</p>
+                        <p>專長：數位證據管理、法律科技應用</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="cases">
+        <div class="container">
+            <h2>成功案例</h2>
+            <div class="cases-tabs">
+                <button class="tab-btn active">家事案件</button>
+                <button class="tab-btn">刑事案件</button>
+                <button class="tab-btn">不動產案件</button>
+                <button class="tab-btn">商業案件</button>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <span class="case-type">家事案件</span>
+                    <h3>跨國遺產分配訴訟</h3>
+                    <p>案件簡介：當事人繼承跨國資產遭親屬隱匿，涉及台灣、美國與日本三地財產。</p>
+                    <p>處理成果：運用區塊鏈技術追蹤資產流向，成功確認當事人繼承權並取得三地資產分配。</p>
+                    <p>客戶回饋：「科技化的法律服務讓我們能即時掌握案件進度，非常透明有效率。」</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-type">刑事案件</span>
+                    <h3>商業間諜案無罪辯護</h3>
+                    <p>案件簡介：當事人被控竊取營業秘密，面臨高額賠償與刑事責任。</p>
+                    <p>處理成果：透過數位鑑識技術分析電子證據，成功證明證據瑕疵，獲不起訴處分。</p>
+                    <p>客戶回饋：「專業的科技法律團隊，為我們釐清了複雜的數位證據。」</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-type">商業案件</span>
+                    <h3>智能合約糾紛仲裁</h3>
+                    <p>案件簡介：區塊鏈項目智能合約執行爭議，涉及跨國法律適用問題。</p>
+                    <p>處理成果：成功調解糾紛並修改合約條款，避免項目團隊高額損失。</p>
+                    <p>客戶回饋：「傳統律師不懂智能合約，理然的科技法律團隊真正理解我們的問題。」</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2>最新文章</h2>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="區塊鏈法律應用">
+                    </div>
+                    <div class="article-content">
+                        <p class="article-date">2023年6月15日</p>
+                        <h3>區塊鏈在法律證據上的應用</h3>
+                        <p>區塊鏈技術如何改變傳統證據保存方式？本文將解析區塊鏈存證的法律效力與實務應用案例...</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="AI法律分析">
+                    </div>
+                    <div class="article-content">
+                        <p class="article-date">2023年6月8日</p>
+                        <h3>AI如何輔助法律案件分析</h3>
+                        <p>人工智慧技術正逐步改變法律服務模式，本文介紹AI在法律案件預測、文書審查等方面的實際應用...</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=802&q=80" alt="智能合約">
+                    </div>
+                    <div class="article-content">
+                        <p class="article-date">2023年5月28日</p>
+                        <h3>智能合約的法律效力解析</h3>
+                        <p>智能合約是否具有法律約束力？在不同法域下可能面臨哪些法律問題？本文將從法律角度分析...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>聯絡我們</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">電子郵件</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="case-type">案件類型</label>
+                            <select id="case-type" name="case-type">
+                                <option value="">請選擇案件類型</option>
+                                <option value="civil">民事案件</option>
+                                <option value="criminal">刑事案件</option>
+                                <option value="property">不動產案件</option>
+                                <option value="family">家事案件</option>
+                                <option value="business">商業案件</option>
+                                <option value="international">國際案件</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">諮詢內容</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">提交諮詢</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h3>事務所地址</h3>
+                            <p>台北市信義區松仁路100號15樓</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <h3>聯絡電話</h3>
+                            <p>02-8789-1234</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fab fa-line contact-icon"></i>
+                        <div>
+                            <h3>LINE官方帳號</h3>
+                            <p>@hla-global</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h3>電子郵件</h3>
+                            <p>contact@hla-global.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <div>
+                            <h3>服務時間</h3>
+                            <p>週一至週五 9:00-18:00<br>週六預約制 10:00-16:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703350328073!2d121.56789531544601!3d25.03398084444566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6e9d93249%3A0x6e1c3a3e1a0e3b0!2zMTAw5Y-w5YyX5biC5L-h576p5Y2A5p2-5b-D6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1620000000000!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-links">
+                    <div class="footer-logo">理然全球法律事務所</div>
+                    <p>HLA Global 結合法律專業與科技創新，提供高效、精準且具國際視野的法律服務。</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-line"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>快速連結</h3>
+                    <ul>
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#about">關於我們</a></li>
+                        <li><a href="#services">專業服務</a></li>
+                        <li><a href="#team">律師團隊</a></li>
+                        <li><a href="#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>專業服務</h3>
+                    <ul>
+                        <li><a href="#">民事糾紛處理</a></li>
+                        <li><a href="#">刑事辯護</a></li>
+                        <li><a href="#">不動產法務</a></li>
+                        <li><a href="#">遺產繼承規劃</a></li>
+                        <li><a href="#">商業法律顧問</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>聯絡資訊</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 台北市信義區松仁路100號</li>
+                        <li><i class="fas fa-phone"></i> 02-8789-1234</li>
+                        <li><i class="fas fa-envelope"></i> contact@hla-global.com</li>
+                        <li><i class="fab fa-line"></i> @hla-global</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 理然全球法律事務所 HLA Global, Attorney-at-Law. 保留所有權利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 導航菜單滾動效果
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (!targetElement) return;
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // 案例標籤切換
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // 移除所有按鈕的 active 類
+                tabBtns.forEach(b => b.classList.remove('active'));
+                // 添加當前按鈕的 active 類
+                btn.classList.add('active');
+                // 這裡可以添加實際的內容切換功能
+            });
+        });
+        
+        // 表單提交處理
+        const contactForm = document.querySelector('.contact-form form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('感謝您的諮詢！我們將儘快與您聯繫。');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
